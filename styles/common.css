@@ -1,0 +1,20 @@
+:root {
+    /* variables */
+    --bg-color: #000;
+    --main-text-color: #fff;
+    --main-brand-color: #e50914;
+    --main-brand-color-light: #e44c54;
+    --border-color: #4b5563;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-bg {
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
