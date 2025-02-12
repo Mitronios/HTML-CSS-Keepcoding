@@ -2,5 +2,17 @@
     position: sticky;
     top: 0;
     background-color: var(--bg-color);
-    z-index: 99;
+    z-index: 999;
+
+    img {
+        width: 20%;
+        max-width: 250px;
+        min-width: 200px;
+    }
+
+    .nav .list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 }
