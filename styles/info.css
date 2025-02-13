@@ -3,3 +3,23 @@
     margin: 0 auto;
     max-width: 768px;
 }
+
+.info {
+    .assets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        img {
+            width: 16em;
+            z-index: 1;
+        }
+
+        video {
+            position: absolute;
+            width: 10em;
+            top: 30px;
+        }
+    }
+}
