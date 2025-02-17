@@ -19,6 +19,18 @@ a {
     color: var(--main-text-color);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
 p {
     margin: 0;
     margin-bottom: 1rem;
@@ -28,3 +40,32 @@ a.hide {
     display: none;
 
 }
+
+@media screen and (width > 768px) {
+    a.hide {
+        display: block;
+    }
+}
+
+/* Configuración de imprimir pantalla, removemos todos estos elementos de la impresión */
+@media print {
+    body {
+
+        header.header,
+        footer.footer,
+        section.banner {
+            display: none;
+        }
+    }
+}
+
+/* 
+configuración de tema claro, si el usuario tiene su os en light
+se aplican estos colores.
+
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #fff;
+        --main-text-color: #000;
+    }
+} */
