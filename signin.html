@@ -8,13 +8,47 @@
   <body>
     <h1>signin.html</h1>
     <a href="./">Home</a>
-    <form>
-      <label for="mail">Add your email</label>
-      <!-- Buenas prácticas para formularios:
+    <form action="./register" method="post">
+      <div>
+        <label for="mail">Add your email</label>
+        <!-- Buenas prácticas para formularios:
       1. Type, 2. name,  3.id
       -->
-      <input type="email" name="email" id="mail" autocomplete="off" />
-      <button>Save</button>
+        <input
+          type="email"
+          name="email"
+          id="mail"
+          autocomplete="off"
+          value="test@test.com"
+        />
+      </div>
+      <div>
+        <label for="password">Add your password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="add your password"
+        />
+      </div>
+      <div>
+        <label for="tel">Enter your phone number</label>
+        <input type="tel" name="telephone" id="tel" autocomplete="off" />
+      </div>
+      <div>
+        <label for="file">Choose a profile picture</label>
+        <input type="file" name="profile" id="profile" accept="image/png " />
+      </div>
+      <fieldset>
+        <legend>Fav programming language</legend>
+        <label for="js">JS</label>
+        <input type="radio" name="fav" id="js" value="js" checked />
+        <label for="python">Python</label>
+        <input type="radio" name="fav" id="python" value="python" />
+      </fieldset>
+      <div>
+        <button>Save</button>
+      </div>
     </form>
   </body>
 </html>
