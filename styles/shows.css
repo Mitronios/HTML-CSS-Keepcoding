@@ -1,0 +1,26 @@
+figure {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    img {
+        width: 100%;
+    }
+
+    display: grid;
+
+    /*Esta es una alternativa para no utilizar el media screen
+     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media screen and (width >768px) {
+    .list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
