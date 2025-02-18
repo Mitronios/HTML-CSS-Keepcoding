@@ -4,51 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>codeFlix | signin</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/signin.css" />
   </head>
-  <body>
-    <h1>signin.html</h1>
+  <body class="main-bg container">
+    <main class="card">
+      <h1>signin.html</h1>
+      <form action="./register" method="post">
+        <div class="form-element">
+          <label for="mail">Add your email</label>
+          <!-- Buenas prácticas para formularios:
+        1. Type, 2. name,  3.id
+        -->
+          <input
+            required
+            type="email"
+            name="email"
+            id="mail"
+            autocomplete="off"
+            value="test@test.com"
+          />
+        </div>
+        <div class="form-element">
+          <label for="password">Add your password</label>
+          <input
+            required
+            type="password"
+            name="password"
+            id="password"
+            placeholder="add your password"
+          />
+        </div>
+        <div class="form-element">
+          <label for="tel">Enter your phone number</label>
+          <input
+            required
+            type="tel"
+            name="telephone"
+            id="tel"
+            autocomplete="off"
+            pattern="[0-9]{3}-[09]{3}-[09]{4}"
+            title="Expected format 123-123-1234"
+          />
+        </div>
+        <div class="file-element">
+          <label for="file">Choose a profile picture</label>
+          <input type="file" name="profile" id="profile" accept="image/png " />
+        </div>
+        <fieldset>
+          <legend>Fav programming language</legend>
+          <label for="js">JS</label>
+          <input type="radio" name="fav" id="js" value="js" checked />
+          <label for="python">Python</label>
+          <input type="radio" name="fav" id="python" value="python" />
+        </fieldset>
+        <div>
+          <div class="form-element">
+            <label for="bio">User bio</label>
+            <textarea
+              name="bio"
+              id="bio"
+              rows="6"
+              placeholder="Add your bio"
+            ></textarea>
+          </div>
+          <div class="form-element row">
+            <label for="remember">Remember me</label>
+            <input type="checkbox" name="remember" id="remember" />
+          </div>
+          <div class="form-element">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="es">España</option>
+              <option value="co">Colombia</option>
+              <option value="us" selected>Usa</option>
+            </select>
+          </div>
+          <button class="btn" type="reset">Reset</button>
+          <button class="btn">Save</button>
+        </div>
+      </form>
+    </main>
     <a href="./">Home</a>
-    <form action="./register" method="post">
-      <div>
-        <label for="mail">Add your email</label>
-        <!-- Buenas prácticas para formularios:
-      1. Type, 2. name,  3.id
-      -->
-        <input
-          type="email"
-          name="email"
-          id="mail"
-          autocomplete="off"
-          value="test@test.com"
-        />
-      </div>
-      <div>
-        <label for="password">Add your password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="add your password"
-        />
-      </div>
-      <div>
-        <label for="tel">Enter your phone number</label>
-        <input type="tel" name="telephone" id="tel" autocomplete="off" />
-      </div>
-      <div>
-        <label for="file">Choose a profile picture</label>
-        <input type="file" name="profile" id="profile" accept="image/png " />
-      </div>
-      <fieldset>
-        <legend>Fav programming language</legend>
-        <label for="js">JS</label>
-        <input type="radio" name="fav" id="js" value="js" checked />
-        <label for="python">Python</label>
-        <input type="radio" name="fav" id="python" value="python" />
-      </fieldset>
-      <div>
-        <button>Save</button>
-      </div>
-    </form>
   </body>
 </html>
