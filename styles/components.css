@@ -7,6 +7,9 @@
     display: inline-block;
     border-radius: 5px;
     border: 1px solid var(--main-brand-color);
+    /* transition-property: background-color;
+    transition-duration: 10s; */
+    transition: background-color 0.3s;
 
     &.secondary {
         background-color: transparent;
