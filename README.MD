@@ -1,6 +1,6 @@
 # Codeflix
 
-¡Bienvenido al repositorio de Codeflix! Este proyecto es un maquetado web creado con HTML y CSS como parte del módulo de Keepcoding. Codeflix es una plataforma de streaming de películas y series ficticia, diseñada para poner en práctica mis habilidades en diseño web front-end.
+¡Bienvenido al repositorio de Codeflix! Este proyecto es un maquetado web creado con HTML y CSS que forma parte del módulo del bootcamp de desarollo web en Keepcoding. Codeflix es "una plataforma de streaming" de películas y series ficticia.
 
 Este proyecto ha sido desplegado en GitHub Pages.
 
@@ -9,9 +9,6 @@ Este proyecto ha sido desplegado en GitHub Pages.
 - [Descripción](#descripcion)
 - [Tecnologías Utilizadas](#tecnologias-utilizadas)
 - [Instalación](#instalacion)
-- [Uso](#uso)
-- [Créditos](#creditos)
-- [Licencia](#licencia)
 
 ## Tecnologías Utilizadas
 
